@@ -36,10 +36,10 @@ Para lanzar el servicio de empezar a grabar con la camara utilizar el siguiente 
 
 ros2 service call /zed2i/zed_node/start_svo_rec zed_interfaces/srv/StartSvoRec "{svo_filename: '/root/<folder name>/<name_file>.svo', compression_mode: '2', target_framerate: '30', bitrate: '6000'}"
 
-Compresion_mode 0-2, 0: LOSSLESS (PNG/ZSTD), 1: H264 (AVCHD) ,2: H265 (HEVC)
-Target_framerate: 0,15,30, 60 or 100. Si empleamos HD720 limitado a 30 max
-Bitrate: 0 or [1000,60000]. 
-Transcode: true or flase . Transforma en otro formato de video ( Preferible no , debido a que la camaara trabaja con el formato svo, se puede convertir luego con la api a otro formatos)
+- Compresion_mode 0-2, 0: LOSSLESS (PNG/ZSTD), 1: H264 (AVCHD) ,2: H265 (HEVC)
+- Target_framerate: 0,15,30, 60 or 100. Si empleamos HD720 limitado a 30 max
+- Bitrate: 0 or [1000,60000]. 
+- Transcode: true or flase . Transforma en otro formato de video ( Preferible no , debido a que la camaara trabaja con el formato svo, se puede convertir luego con la api a otro formatos)
 
 Para pausar la grabacion se puede llamar al servicio con el siguiente comando
 
