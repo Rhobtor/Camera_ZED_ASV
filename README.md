@@ -19,7 +19,8 @@ docker run -it --gpus all  --privileged --net host -e DISPLAY -v /tmp/.X11-unix:
 
 Si se quiere persistir con un volumen externo podemos hacerlo con 
 
-docker run -it --gpus all  --privileged --net host -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v <path folder in hot>:<path folder destination> <image name>
+docker run -it --gpus all  --privileged --net host -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v 
+<path folder in hot>:<path folder destination> <image name>
 
 En el wrapper lanzar el launch con el comando 
 
