@@ -14,4 +14,9 @@ echo "---"
 echo 'Available ZED packages:'
 # ros2 pkg list | grep zed
 echo "---------------------"    
+
+# Run your command in the background
+ros2 run tf2_ros static_transform_publisher 0 0.06 0 0 0 0 base_link zed2i_camera_center &
+ros2 launch zed_wrapper zed2i.launch.py
+
 exec "$@"
