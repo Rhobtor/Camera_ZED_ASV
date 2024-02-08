@@ -121,4 +121,3 @@ COPY ros_entrypoint_jetson.sh /sbin/ros_entrypoint.sh
 RUN sudo chmod 755 /sbin/ros_entrypoint.sh
 
 ENTRYPOINT ["/sbin/ros_entrypoint.sh"]
-CMD ["/bin/bash", "-c", "source /opt/ros/eloquent/setup.bash; source install/setup.bash; ros2 launch zed_wrapper zed2i.launch.py"]
