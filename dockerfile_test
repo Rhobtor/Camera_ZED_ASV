@@ -58,7 +58,7 @@ RUN apt update
 RUN apt install nano
 WORKDIR /root/ros2_ws/src
 
-COPY ./zed-ros2-wrapper-humble/zed-ros2-wrapper-humble /root/ros2_ws/src
+COPY ./zed-ros2-wrapper-humble_copy/zed-ros2-wrapper-humble /root/ros2_ws/src
 
 # Install missing dependencies
 WORKDIR /root/ros2_ws/src
